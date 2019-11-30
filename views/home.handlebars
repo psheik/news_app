@@ -1,0 +1,28 @@
+{{> header }}
+
+<div class="container-fluid article-container">
+{{#if article}}
+  {{#each article}}
+  <div data-_id={{this._id}} class="card">
+    <div class="card-header">
+      <h3>
+        <a class="article-link" target="_blank" rel="noopener noreferrer" href={{this.url}}>{{this.headline}}</a>
+        <a class="btn btn-success save">Save Article</a>
+      </h3>
+    </div>
+    <div class="card-body">{{this.summary}}</div>
+  </div>
+  {{/each}}
+</div>
+{{else}}
+  <div class='alert alert-success text-center'>
+    <h4>No new articles.</h4>
+  </div>
+{{/if}}
+
+{{> footer }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+<script src="/assets/javascript/index.js"></script>
