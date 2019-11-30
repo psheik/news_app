@@ -6,9 +6,6 @@ html {
 body {
   margin-bottom: 100px;
   background-color: silver;
-  margin-left: 27px;
-  margin-right: 27px;
-  margin-top: 27px;
 }
 
 .card a:not([href]):not([tabindex]).scrape-new {
