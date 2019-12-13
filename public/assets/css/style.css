@@ -148,5 +148,9 @@ textarea {
 }
 
 #scrapeArticles {
-  margin-left: 18px;
+  margin-left: 10px;
+}
+
+.nav-link {
+  margin-left: 10px;
 }
